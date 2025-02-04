@@ -1,2 +1,2 @@
 ### SAMPLE IMAGE OF OUTPUT
-![Sample Image](LABSHEET01.png]
+![Sample Image](LABSHEET01.png)
