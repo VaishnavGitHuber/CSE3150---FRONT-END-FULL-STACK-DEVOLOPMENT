@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    margin: 0px;
+    background-color: #CADCFC;
+}
+header p {
+    font-size: 20px;
+    font-weight: bolder;
+}
+header h1 {
+    margin: 0px;
+}
+header {
+    color: white;
+    background-color: #00246B;
+}
+.container {
+    max-width: 800px;
+}
+img {
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+}
+.container h3{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin-top: 10px;
+    color:#00246B;
+}
+.container .intro {
+    font-size: 25px;
+    color: #181818;
+}
+.container p {
+    font-size: 20px;
+    color: #181818;
+    margin: 10px;
+}
+.container ul li {
+    font-size: 20px;
+    color: #181818;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+.container ul li:hover {
+    background-color: yellowgreen;
+}
