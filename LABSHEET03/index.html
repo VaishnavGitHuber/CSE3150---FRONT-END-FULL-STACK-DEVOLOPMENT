@@ -1,0 +1,317 @@
+<!-- 
+ Question: You have been tasked to design a webpage for a new restaurent that will be opening soon.
+ The webpage should showcase the restaurent ambience and cusine using attractive visual elements.
+ -->
+
+ <html>
+    <head>
+        <title>Restaurent BBQ Night</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Navbar for the restarent page -->
+        <nav class="navbar navbar-expand-lg navbar-light bg1-custom p-3">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white fs-3" href="#">BBQ Night</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Section for adding the introduction -->
+           <div class="row" style="height: 40rem;">
+             <div class="col-md-12 text-center p-5 bg2-custome">
+                <img src="images/food.jpg"  alt="Responsive image">
+                </div>
+             <div class="col-md-12 text-center p-5 bg2-custome">
+                <h1 class="display-4">Welcome to BBQ Night</h1>
+                <p class="lead">We are a family-owned and operated restaurant specializing in authentic BBQ dishes.</p>
+                <a class="btn btn-primary btn-lg m-2" href="#booking" role="button">Book a Table</a>
+                <a class="btn btn-secondary btn-lg m-2" href="#contact" role="button">Contact Us</a>
+                <a class="btn btn-success btn-lg m-2" href="#" role="button">Reservations</a>
+                <a class="btn btn-danger btn-lg m-2" href="#menu" role="button">Menu</a>
+                <a class="btn btn-warning btn-lg m-2" href="#special-offer" role="button">Special Offers</a>
+                <a class="btn btn-info btn-lg m-2" href="#events" role="button">Events</a>
+                <a class="btn btn-dark btn-lg m-2" href="#" role="button">Press</a>
+                <a class="btn btn-light btn-lg m-2" href="#gallery" role="button">Gallery</a>
+                <a class="btn btn-primary btn-lg m-2" href="#contact" role="button">Feedback</a>
+                </div>
+           </div>
+        <!-- About us details -->
+        <div class="row bg1-custom">
+            <div class="col-md-12 col-12">
+                <h1 class="text-center text-white p-5">MENU</h1>
+            </div>
+        </div>
+        <div class="row bg1-custom menu " id="menu">
+            <div class="col-6 col-md-3 p-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/burger.jpg" class="" alt="Delicious Burger">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Cheeseburger</h5>
+                        <p class="card-text">Juicy grilled beef patty topped with melted cheese, fresh lettuce, and a special sauce.</p>
+                        <p class="fw-bold text-primary">$8.99</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 p-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/menu_food.jpg" class="" alt="Pasta">
+                    <div class="card-body">
+                        <h5 class="card-title">Creamy Alfredo Pasta</h5>
+                        <p class="card-text">A rich and creamy Alfredo sauce tossed with fettuccine pasta and parmesan cheese.</p>
+                        <p class="fw-bold text-primary">$12.99</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 p-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/grilled_steak.jpg" class="" alt="Grilled Steak">
+                    <div class="card-body">
+                        <h5 class="card-title">Grilled Steak</h5>
+                        <p class="card-text">Perfectly grilled steak with garlic butter and served with mashed potatoes.</p>
+                        <p class="fw-bold text-primary">$18.99</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row bg1-custom menu pt-5 pb-5">
+            <div class="col-6 col-md-3 p-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/pizza.jpg" class="" alt="Pizza">
+                    <div class="card-body">
+                        <h5 class="card-title">Margherita Pizza</h5>
+                        <p class="card-text">Classic Italian pizza with fresh tomatoes, basil, mozzarella, and a crispy crust.</p>
+                        <p class="fw-bold text-primary">$10.99</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 p-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/spice_chicken.jpg" class="" alt="Tacos">
+                    <div class="card-body">
+                        <h5 class="card-title">Spicy Chicken Tacos</h5>
+                        <p class="card-text">Soft tortillas filled with spicy grilled chicken, fresh salsa, and a creamy sauce.</p>
+                        <p class="fw-bold text-primary">$9.99</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 p-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/choclate_lava.jpg" class="" alt="Chocolate Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Lava Cake</h5>
+                        <p class="card-text">Warm chocolate cake with a gooey molten center, served with vanilla ice cream.</p>
+                        <p class="fw-bold text-primary">$7.99</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Book a table -->
+         <div class="row">
+             <div class="col-md-12 text-center p-5">
+                <h1 class="display-4">Book a Table</h1>
+                <p class="lead">Please fill out the form below to make a reservation.</p>
+        </div>
+
+        <div class="container P-5" id="booking">
+                <form class="custom-form" action="">
+                    <div class="col-12 col-md-12 pb-4">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="col-12 col-md-12 pb-4">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="col-12 col-md-12 pb-4">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="col-12 col-md-12 pb-4">
+                        <label for="date">Date:</label>
+                        <input type="date" class="form-control" id="date" required>
+                    </div>
+                    <div class="col-12 col-md-12 pb-4">
+                        <label for="people">Number of People:</label>
+                        <input type="number" class="form-control" id="people" required>
+                    </div>
+                    <div class="col-12 col-md-12 pb-4">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+         </div>
+
+         <div class="row special-offers bg1-custom" id="special-offer">
+            <div class="col-md-12 text-center p-5">
+                <h1 class="display-4">🔥 Exclusive Special Offers! 🔥</h1>
+                <p class="lead">Indulge in delicious flavors at unbeatable prices! Enjoy maek
+                    <strong> buy one, get one free </strong> on select BBQ dishes, <strong>20% off</strong>for early diners, and <strong> complimentary desserts</strong> with family meals. Don't miss out—these deals are available for a <strong>limited time only</strong>!</p>
+                <h3 class="mt-4">🎉 Offer Valid Today Only! 🎉</h3>
+                <p class="fw-bold">Reserve your table now and treat yourself to an unforgettable dining experience.</p>
+            </div>
+        </div>
+        
+        <div class="container py-5" id="contact">
+            <h2 class="text-center mb-4">📩 Get in Touch</h2>
+            <p class="text-center">Have a question or special request? We'd love to hear from you!</p>
+        
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message:</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row bg1-custom" id="events">
+            <h2 class="text-center display-4 mb-4 p-4">🎉 Events at Our Restaurant</h2>
+            <p class="text-center lead">Experience unforgettable moments with us! From live music nights to exclusive dining experiences, check out our upcoming events.</p>
+        
+            <div class="row justify-content-center ">
+                <!-- Event 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/event1.jpg" class="card-img-top" alt="Live Music Night">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">🎶 Live Music Night</h5>
+                            <p class="card-text">Join us for an evening of soulful melodies and delicious food. Reserve your spot now!</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Event 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/event2.jpg" class="card-img-top" alt="Weekend BBQ Bash">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">🔥 Weekend BBQ Bash</h5>
+                            <p class="card-text">Enjoy sizzling BBQ specials with friends and family. Don’t miss out on the fun!</p>
+                            <a href="#" class="btn btn-primary">Reserve Now</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Event 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/event3.jpg" class="card-img-top" alt="Chef’s Special Tasting">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">👨‍🍳 Chef’s Special Tasting</h5>
+                            <p class="card-text">Indulge in an exclusive tasting menu curated by our head chef. Limited seats available!</p>
+                            <a href="#" class="btn btn-primary">Book Your Seat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="row py-5" id="gallery">
+            <h2 class="text-center display-4 mb-4">📸 Our Restaurant Gallery</h2>
+            <p class="text-center lead">Explore the vibrant ambiance, mouthwatering dishes, and warm hospitality of our restaurant.</p>
+        
+            <div class="row justify-content-center">
+                <!-- Image 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/gallery1.jpg" class="card-img-top" alt="Restaurant Interior">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">✨ Elegant Interior</h5>
+                            <p class="card-text">Experience fine dining in a cozy and beautifully designed space.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Image 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/gallery1.jpg" class="card-img-top" alt="Delicious Food">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">🍽️ Signature Dishes</h5>
+                            <p class="card-text">Indulge in our chef’s special creations, made with love and fresh ingredients.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Image 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/gallery1.jpg" class="card-img-top" alt="Restaurant Ambience">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">🌟 Vibrant Ambiance</h5>
+                            <p class="card-text">A perfect place to unwind and enjoy great food with amazing company.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="row text-center mt-5 bg1-custom p-5">
+                <div class="col-md-4">
+                    <h5>📍 Address</h5>
+                    <p>123 BBQ Street, Food City, FL 45678</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>📞 Phone</h5>
+                    <p>+1 234 567 890</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>⏰ Opening Hours</h5>
+                    <p>Mon-Sun: 10:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+        </div>
+               
+        <!-- All Bootstrap related Js Files -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+ </html>
