@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bakery Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?bakery') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .menu-item {
+            text-align: center;
+            padding: 20px;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bakery Delights</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Ammas Pastries</h1>
+        <p>Delicious pastries, cakes, and treats made with love</p>
+        <a href="#" class="btn btn-primary btn-lg">View Menu</a>
+    </div>
+
+    <!-- Menu Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Our Specialties</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="menu-item">
+                    <h4>Chocolate Cake</h4>
+                    <p>Rich and moist chocolate cake with creamy frosting.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-item">
+                    <h4>Butter Croissant</h4>
+                    <p>Flaky, buttery croissant perfect for breakfast.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-item">
+                    <h4>Fresh Sourdough</h4>
+                    <p>Authentic sourdough bread with a crispy crust.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="container my-5">
+        <div class="card text-center p-4">
+            <h3>About Us</h3>
+            <p>Bakery Delights has been making fresh, homemade treats for over a decade. Our passion for quality and taste drives us to create the best baked goods in town.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Bakery Delights | <a href="#" class="text-white">Facebook</a> | <a href="#" class="text-white">Instagram</a></p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
