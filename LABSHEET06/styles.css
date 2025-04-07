@@ -1,0 +1,29 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: green;
+}
+
+form label {
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+form input, select {
+    width: 600px;
+    height: 2rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+}
+h2 {
+    color: yellow;
+    font-size: 2rem;
+    text-align: center;
+}

@@ -1,0 +1,94 @@
+<!--
+LABSHEET 06
+
+Design a Web Registration form with the following fields
+1. FullName(text)
+2. Date of Birth(Date) + ageText
+3. Phone Number(number)
+4. Gender(dropbox) + genderText 
+5. Country(dropbox) + stateText
+6. Password
+7. Confirm Password
+8. Registor Button
+
+Functionality 
+Conditional Display
+0. display age of the person T
+1. if gender - other : a new input box to specify 
+2. if country - usa : a new input field to specify state
+
+Inline Validation
+1. ensure required field is not empty 
+2. Password and Confirm Password should match
+3. The phone number should match T
+
+Password Strength Check
+1. if only number 
+2. if number + alphabets 
+3. if number + aplhabets + special symbols 
+-->
+
+<html>
+    <head>
+        <title>Registration Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Heading for the form -->
+         <h2> Registration Form </h2>
+
+         <!-- Form -->
+          <form action="">
+            <!-- Full Name -->
+             <label for="">Full Name</label>
+             <input type="text" name="" id="nameText">
+
+             <!-- Date of Birth -->
+              <label for="">Date Of Birth</label>
+              <input type="date" name="" id="dob">
+
+              <h3 id="ageText" style="display: none;"></h3>
+
+              <!-- Phone Number -->
+               <label for="">Phone Number</label>
+               <input type="number" name="" id="number">
+
+               <!-- Gender -->
+                <label for="">Gender </label>
+                <select name="" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <!-- Gender Text-->
+                <input style="display: none;" type="text" id="genderText" placeholder="Enter your gender...">
+
+                <!-- Country -->
+                 <label for="">Country</label>
+                 <select name="" id="country">
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="india">INDIA</option>
+                 </select>
+
+                 <!-- Country Text -->
+                 <input style="display: none;" type="text" id="countryText" placeholder="Enter your state...">
+
+                 <!-- password -->
+                  <label for="">Password</label>
+                  <input type="password" name="" id="password">
+
+                  <h3 id="passwordStatus"></h3>
+
+                  <!-- confirm password -->
+                  <label for="">Confirm Password</label>
+                  <input type="password" name="" id="confirmpassword">
+
+                  <!-- registration button -->
+                   <input type="button" value="Registor" id="btn">
+          </form>
+
+          <script src="script.js"></script>
+    </body>
+</html>
