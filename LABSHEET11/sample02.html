@@ -1,0 +1,17 @@
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <div ng-app="Myapp" ng-controller="Myctrl">
+        <p>Name : {{name}}</p>
+        <p>Age: {{age}}</p>
+        <p>Adress: {{adress}}</p>
+    </div>
+
+    <script>
+        var app = angular.module("Myapp", []);
+        app.controller('Myctrl', function($scope){
+            $scope.name = "Vaishnav Krishna P";
+            $scope.age = 21;
+            $scope.adress = "Krishna Kripa";
+        })
+    </script>
+</body>

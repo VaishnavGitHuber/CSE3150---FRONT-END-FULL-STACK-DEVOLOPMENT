@@ -1,0 +1,17 @@
+<!-- Practice test 1 consists of string, object, array, expression -->
+
+
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+ <div ng-app="" ng-init="name='Vaishnav Krishna P'; age= 25; pointers=[23,45,67,89]; bioinfo = {'name':'Vaishnav Krishna P', 'skill': 'AI-Expert'}">
+    <h3>STRING, EXPRESSION, ARRAY, OBJECT</h3>   
+    <p>10 + 5 = {{10 + 5}}</p>
+        <p>Name : {{name}}</p>
+        <p>Age : <span ng-bind="age"></span></p>
+        <p>pointers[3] = {{pointers[3]}}</p>
+        <p>Name: {{bioinfo.name}}</p>
+        <p>Skills: {{bioinfo.skill}}</p>
+</div>
+
+</body>
