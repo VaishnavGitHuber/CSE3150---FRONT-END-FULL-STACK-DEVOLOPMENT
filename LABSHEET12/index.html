@@ -1,0 +1,48 @@
+<html>
+    <head >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body class="container" ng-app="myapp" ng-controller="myctrl" ng-init="sortby='';searchterm=''">
+        <h1 class="fs-3" style="text-align: center;">TABLE FOR PLANETS</h1>
+            <input type="text" ng-model="searchterm" placeholder="Enter search term">
+            <input type="text" ng-model="sortby" placeholder="Enter sort by">
+        
+        <table class="table table-striped table-hover">
+            <thead>
+                
+                <tr>
+                    <th>NAME</th>
+                    <th>TYPE</th>
+                    <th>DISTANCE</th>
+                    <th>MOONS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="planet in planets|filter:searchterm|orderBy:sortby">
+                    <td>{{planet.name}}</td>
+                    <td>{{planet.type}}</td>
+                    <td>{{planet.distance}}</td>
+                    <td>{{planet.moons}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            var app = angular.module("myapp", []);
+            app.controller("myctrl", function($scope){
+                $scope.planets = [
+                    {name:'Mercury', type: 'Terrestrial', distance: 0.39, moons: 1 },
+                    {name:'Venus', type: 'Gas Giant', distance: 0.39, moons: 2 },
+                    {name:'Earth', type: 'Terrestrial', distance: 0.89, moons: 7 },
+                    {name:'Mars', type: 'ice berg', distance: 0.29, moons: 0 },
+                    {name:'Jupyter', type: 'Terrestrial', distance: 0.99, moons: 0 },
+                    {name:'Saturn', type: 'Gas Gienat', distance: 0.79, moons: 9 },
+                    {name:'Uranus', type: 'Terrestrial', distance: 0.3, moons: 0 },
+                    {name:'Venus', type: 'Gas Gaint', distance: 0.39, moons: 1 }
+                ]
+                $scope.searchTerm = ''
+            })
+
+        </script>
+    </body>
+</html>
