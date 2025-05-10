@@ -1,0 +1,110 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Expense Tracker</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto"> 
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#addExpenseForm">Add Expense</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#expenseTable">View Expenses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container mt-4">
+<section class="hero d-flex align-items-center justify-content-center text-center bg-white" style="min-height: 90vh;">
+  <div class="container">
+    <img  src="https://cdn3d.iconscout.com/3d/premium/thumb/expense-tracking-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--budgeting-tools-personal-finance-saving-money-budget-tracker-financial-planning-pack-business-illustrations-8060296.png" alt="Expense Tracker" class="" style="max-width: 400px;">
+    <h1 class="display-4 fw-bold text-dark">Track Your Expenses Smartly!</h1>
+    <p class="lead text-dark">Manage your money better, plan for your dreams, and secure your future with ease.</p>
+  </div>
+</section>
+
+
+
+<!-- Add Expense Form -->
+<div class="card mb-4" id="addExpenseForm">
+  <div class="card-header">
+    <h5>{{ isEditing ? 'Update Expense' : 'Add New Expense' }}</h5>
+  </div>
+  <div class="card-body">
+    <form (ngSubmit)="isEditing ? updateExpense() : addExpense()">
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input type="text" id="description" [(ngModel)]="newExpense.description" name="description" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="amount" class="form-label">Amount (₹)</label>
+        <input type="number" id="amount" [(ngModel)]="newExpense.amount" name="amount" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="date" class="form-label">Date</label>
+        <input type="date" id="date" [(ngModel)]="newExpense.date" name="date" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-{{ isEditing ? 'primary' : 'success' }} w-100">
+        {{ isEditing ? 'Update Expense' : 'Add Expense' }}
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Expenses Table -->
+<div class="card" id="expenseTable">
+  <div class="card-header">
+    <h5>All Expenses</h5>
+  </div>
+  <div class="card-body p-0">
+    <table class="table table-striped mb-0">
+      <thead class="table-dark">
+        <tr>
+          <th>Description</th>
+          <th>Amount (₹)</th>
+          <th>Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let expense of expenses; let i = index">
+          <td>{{ expense.description }}</td>
+          <td>{{ expense.amount }}</td>
+          <td>{{ expense.date }}</td>
+          <td>
+            <button class="btn btn-sm btn-primary me-2" (click)="editExpense(i)">Edit</button>
+            <button class="btn btn-sm btn-danger" (click)="deleteExpense(i)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div *ngIf="expenses.length === 0" class="text-center p-3">
+      No expenses added yet.
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="alert alert-success text-center mt-4" role="alert">
+    "A penny saved is a penny earned. Start saving today for a better tomorrow!"
+  </div>
+
+</div>
+
+
+<footer class="bg-dark text-white text-center p-3 mt-4">
+  &copy; 2025 Expense Tracker | Manage Money Wisely
+</footer>

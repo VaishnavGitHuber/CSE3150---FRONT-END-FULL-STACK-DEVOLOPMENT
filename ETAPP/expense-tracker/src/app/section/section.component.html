@@ -1,0 +1,36 @@
+<div class="container mt-4">
+    <section class="hero d-flex align-items-center justify-content-center text-center bg-white" style="min-height: 90vh;">
+      <div class="container">
+        <img  src="https://cdn3d.iconscout.com/3d/premium/thumb/expense-tracking-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--budgeting-tools-personal-finance-saving-money-budget-tracker-financial-planning-pack-business-illustrations-8060296.png" alt="Expense Tracker" class="" style="max-width: 400px;">
+        <h1 class="display-4 fw-bold text-dark">Track Your Expenses Smartly!</h1>
+        <p class="lead text-dark">Manage your money better, plan for your dreams, and secure your future with ease.</p>
+      </div>
+    </section>
+    
+    
+    
+    <!-- Add Expense Form -->
+    <div class="card mb-4" id="addExpenseForm">
+      <div class="card-header">
+        <h5>{{ isEditing ? 'Update Expense' : 'Add New Expense' }}</h5>
+      </div>
+      <div class="card-body">
+        <form (ngSubmit)="isEditing ? updateExpense() : addExpense()">
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <input type="text" id="description" [(ngModel)]="newExpense.description" name="description" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="amount" class="form-label">Amount (₹)</label>
+            <input type="number" id="amount" [(ngModel)]="newExpense.amount" name="amount" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Date</label>
+            <input type="date" id="date" [(ngModel)]="newExpense.date" name="date" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-{{ isEditing ? 'primary' : 'success' }} w-100">
+            {{ isEditing ? 'Update Expense' : 'Add Expense' }}
+          </button>
+        </form>
+      </div>
+    </div>
